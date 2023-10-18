@@ -99,9 +99,13 @@ bin/
 /data/interim
 /data/processed
 /data/raw
+/data/
 
 # exclude external models from source control
 /src/external/
 
 # Models
 /models/
+
+# System Files
+.DS_Store
