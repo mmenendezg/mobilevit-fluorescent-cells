@@ -11,14 +11,12 @@ from datasets import Dataset, DatasetDict
 
 # Checkpoint of the model used in the projec
 MODEL_CHECKPOINT = "apple/deeplabv3-mobilevit-xx-small"
-# UPDATE THIS IN THE FINAL MAIN FILE
-RAW_DATA_PATH = "../data/raw/"
 # Size of the image used to train the model
 IMG_SIZE = [256, 256]
 
 
 class FluorescentNeuronalDataModule(pl.LightningDataModule):
-    def __init__(self, batch_size, data_dir=RAW_DATA_PATH, dataset_size=1.0):
+    def __init__(self, batch_size, data_dir, dataset_size=1.0):
         super().__init__()
         self.data_dir = data_dir
         self.batch_size = batch_size
