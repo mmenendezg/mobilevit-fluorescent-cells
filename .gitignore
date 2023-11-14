@@ -107,8 +107,5 @@ bin/
 # Training logs
 /reports/logs/
 
-# Models
-/models/
-
 # System Files
 .DS_Store
