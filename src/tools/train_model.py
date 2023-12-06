@@ -6,8 +6,8 @@ import pytorch_lightning as pl
 from pytorch_lightning.callbacks.model_checkpoint import ModelCheckpoint
 from pytorch_lightning.loggers import TensorBoardLogger
 
-from src.models.mobilevit import MobileVIT
-from src.data.data_preprocessing import FluorescentNeuronalDataModule
+from models.mobilevit import MobileVIT
+from data.data_preprocessing import FluorescentNeuronalDataModule
 
 CONFIG_FILE = "config/fluorescent_mobilevit_hps.yaml"
 DATA_DIR = "data/raw/"

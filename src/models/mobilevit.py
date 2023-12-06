@@ -5,12 +5,12 @@ import pytorch_lightning as pl
 from transformers import MobileViTForSemanticSegmentation
 import evaluate
 
-MODEL_CHECKPOINT = "apple/deeplabv3-mobilevit-xx-small"
+MODEL_CHECKPOINT = "mmenendezg/mobilevit-fluorescent-neuronal-cells"
 CLASSES = {0: "Background", 1: "Neuron"}
 
 
 class MobileVIT(pl.LightningModule):
-    def __init__(self, learning_rate, weight_decay):
+    def __init__(self, learning_rate=None, weight_decay=None):
         super().__init__()
         self.id2label = CLASSES
         self.label2id = {v: k for k, v in self.id2label.items()}

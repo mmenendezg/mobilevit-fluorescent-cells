@@ -7,8 +7,8 @@ import pytorch_lightning as pl
 import click
 from pytorch_lightning.callbacks.early_stopping import EarlyStopping
 
-from src.models.mobilevit import MobileVIT
-from src.data.data_preprocessing import FluorescentNeuronalDataModule
+from models.mobilevit import MobileVIT
+from data.data_preprocessing import FluorescentNeuronalDataModule
 
 
 MODEL_CHECKPOINT = "apple/deeplabv3-mobilevit-xx-small"
